@@ -1,0 +1,37 @@
+{% block content_header %}
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="{% url 'accueil' %}" > Accueil TWIN6</a>
+        <div class="">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'LV' %}"> Affiche</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'ajout' %}"> Ajout</a>
+
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'login' %}"> Login</a>
+
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="{% url 're' %}"> register</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="{% url 'logout' %}"> Logout</a>
+                </li>
+                 <li class="nav-item">
+                    <a class="nav-link" href="{% url 'login2' %}"> Login2</a>
+                </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'logout2' %}"> Logout2</a>
+                </li>
+
+            </ul>
+        </div>
+
+    </nav>
+
+</div>
+{% endblock %}

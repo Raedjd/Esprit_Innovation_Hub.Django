@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+ Bonjour <i>4TWIN 6</i>
+{%block content %}
+<table border="1">
+    <tr>
+        <th>Nom projet</th>
+        <th>Description</th>
+        <th>Etat</th>
+        <th>Delete</th>
+        <th>Delete Generic</th>
+    </tr>
+    {% for p in pp %}
+        <tr>
+            <td>{{p.nom_projet}}</td>
+            <td>{{p.description}}</td>
+            <td>{{ p.est_valide }}</td>
+            <td><a href="{% url 'D' p.id %} ">Delete</a></td>
+            <td><a href="{% url 'DD' p.id %}">Delete Generic</a></td>
+        </tr>
+    {% endfor %}
+</table>
+{%endblock%}
